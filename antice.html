@@ -1,0 +1,180 @@
+		<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Antice</title>
+ <link rel="stylesheet" href="antice.css">
+ <style>
+		.carousel-container {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 400px;
+			width: 40%;
+			margin: 0 auto;
+			overflow: hidden;
+		}
+		.carousel {
+			display: flex;
+			height: 100%;
+			width: 100%;
+			transition: transform 0.1s ease-in-out;
+		}
+		.carousel-slide {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+			width: 100%;
+		}
+		.carousel-slide img {
+			height: 300px;
+			width: 500px;
+			object-fit: cover;
+		}
+		.carousel-btn {
+			display: inline-block;
+			margin: 0;
+			margin-left:10%;
+			background-color: #ddd;
+			padding: 5px 10px;
+			border-radius: 10px;
+			cursor: pointer;
+			
+			
+		}
+		.carousel-btn.active {
+			background-color: #555;
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+<h2>CELE 7 MINUNI ALE LUMII ANTICE</h2>
+	<div class="container1">
+        <div class="carousel1">
+          <div class="carousel1__face1"></div>
+          <div class="carousel1__face1"></div>
+          <div class="carousel1__face1"></div>
+          <div class="carousel1__face1"></div>
+          <div class="carousel1__face1"></div>
+          <div class="carousel1__face1"></div>
+          <div class="carousel1__face1"></div>
+          <div class="carousel1__face1"></div>
+          <div class="carousel1__face1"></div>
+        </div>
+      </div>
+	  <br><br><br><br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br>
+<div class="pl">
+<h1>1. Marele Templu al zeiței Artemis din Efes</h1>
+
+	<p>Efes, situat în partea de vest a Turciei, este un oraș antic care a fost locuit de multe civilizații, inclusiv greacă și romană. În Efes, exista unul dintre cele șapte minuni ale lumii antice, Marele Templu al zeiței Artemis. Templul a fost construit pentru a adăposti o statuie mare a zeiței Artemis, care a fost una dintre cele mai importante divinități feminine ale mitologiei grecești.</p>
+<div class="divp">
+<img src="poze/t.jpg" width="30%" height="20%">
+<img src="poze/t1.jpg" width="30%" height="20%">
+</div>
+	<h1>2.Grădinile suspendate ale Semiramidei</h1>
+	<p>Grădinile suspendate ale Semiramidei au fost considerate una dintre cele șapte minuni ale lumii antice. Acestea erau un ansamblu de grădini amenajate pe mai multe niveluri și dispuse în trepte, care ofereau o priveliște impresionantă asupra orașului Babilonului din Irak.</p>
+	<p>Se crede că grădinile au fost construite în jurul anului 600 î.Hr. de către regina Semiramida pentru a-și impresiona soțul, regele Nabucodonosor al II-lea. Cu toate acestea, există puține informații precise despre aceste grădini și puține dovezi arheologice care să ateste existența lor. În plus, istoricii au interpretat în mod diferit descrierile antice ale grădinilor și locul unde acestea ar fi fost amplasate.</p>
+<div class="divp">
+<img src="poze/g.jpg" width="30%" height="20%">
+<img src="poze/g1.jpg" width="30%" height="20%">
+</div>
+
+<h1>3. Statuia lui Zeus la Olympia</h1>
+<p>Statuia lui Zeus la Olympia a fost una dintre cele șapte minuni ale lumii antice. Ea a fost realizată în jurul anului 435 î.Hr. de către celebrul sculptor Fidias, la cererea grecilor din Elis pentru a-l onora pe zeul lor protector, Zeus.</p>
+
+<p>Statuia era confecționată din lemn, acoperit cu foițe de aur și având o înălțime de peste 12 metri. Zeus era reprezentat așezat pe un tron, îmbrăcat într-un mantou și cu o coroană de măslin pe cap. În mâna dreaptă ținea o figurină a zeiței Nike, iar în mâna stângă o sceptru.</p>
+
+
+</div>
+
+<div class="carousel-btns">
+		<div class="carousel-btn active" onclick="gotoSlide(0)">1</div>
+		<div class="carousel-btn" onclick="gotoSlide(1)">2</div>
+		<div class="carousel-btn" onclick="gotoSlide(2)">3</div>
+		<div class="carousel-btn" onclick="gotoSlide(3)">4</div>
+		<div class="carousel-btn" onclick="gotoSlide(4)">5</div>
+		<div class="carousel-btn" onclick="gotoSlide(5)">6</div>
+		<div class="carousel-btn" onclick="gotoSlide(6)">7</div>
+	</div>
+<div class="carousel-container">
+		<div class="carousel">
+			<div class="carousel-slide">
+				<img src="poze/1.jpg" alt="Imagine 1">
+			</div>
+			<div class="carousel-slide">
+				<img src="poze/2.jpg" alt="Imagine 2">
+			</div>
+			<div class="carousel-slide">
+				<img src="poze/3.jpg" alt="Imagine 3">
+			</div>
+			<div class="carousel-slide">
+				<img src="poze/4.jpg" alt="Imagine 4">
+			</div>
+			<div class="carousel-slide">
+				<img src="poze/5.jpg" alt="Imagine 5">
+			</div>
+			<div class="carousel-slide">
+				<img src="poze/6.jpg" alt="Imagine 6">
+			</div>
+			<div class="carousel-slide">
+				<img src="poze/7.jpg" alt="Imagine 7">
+			</div>
+		</div>
+		
+	</div>
+	<br><br><br><br>
+	
+	
+	
+	
+	
+	
+	
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	
+	<script>
+		const carouselSlide = document.querySelector('.carousel');
+		const carouselImages = document.querySelectorAll('.carousel-slide');
+		const carouselBtns = document.querySelectorAll('.carousel-btn');
+		const slideWidth = carouselImages[0].clientWidth;
+		let slideIndex = 0;
+
+		function gotoSlide(index) {
+			carouselSlide.style.transform = `translateX(${-index * slideWidth}px)`;
+			carouselBtns.forEach(btn => btn.classList.remove('active'));
+			carouselBtns[index].classList.add('active');
+			slideIndex = index;
+		}
+
+		setInterval(() => {
+			if (slideIndex === carouselImages.length - 1) {
+				gotoSlide(0);
+			} else {
+				gotoSlide(slideIndex + 1);
+			}
+		}, 50000);
+	</script>
+	
+	
+	
+
+<footer> 
+	<nav>
+	<ul>	
+			<li><a class="footer" href="index.html">ACASA</a></li>
+			
+	 		
+	 		<li><a class="footer" href="antice.html">ANTICE</a></li>
+	 		<li><a class="footer" href="moderne.html">MODERNE</a></li>
+	 		<li><a class="footer" href="contact.html">CONTACT</a></li>
+		</ul>
+	</nav>
+</footer>
+
+ </body>
+</html

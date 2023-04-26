@@ -1,0 +1,192 @@
+
+header {
+	margin-top: 7%;
+	border-style: solid;
+	border-width: 5px;
+        border-radius:20px;
+	border-color:#000000;
+	line-height: 1.6;
+	background-color:#b33939;
+	height: 50%;
+	width: 80%;
+	margin-bottom: 10%;
+}
+header img {
+	max-width: 50%;
+  	height: auto;
+  	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	margin-bottom: 3%;
+
+}
+.mySlides{
+	
+	display:none;
+	height:300px;
+	max-weight:400px;
+	margin: auto;
+	margin-radius: 25px;
+}
+
+.inceput {
+	text-align: center;
+	color: #b33939;
+	font-family: Verdana;
+	font-size: 30px;
+	margin-bottom: 5px;
+	margin-top: 35px;
+	font-weight: bold;
+}
+p {
+	font-size: 15px;
+	font-family: Ebrima;
+	margin-top: 15px;
+	margin-left: 2%;
+	margin-right:20px;
+	text-align: left;
+	opacity: 100;
+}
+.T {
+	margin-top: 10px;
+	margin-bottom: 50px;
+
+}
+h1 {
+	text-align: left;
+	font-size: 20px;
+	margin-top: 10px;
+	margin-right: 8px;
+	opacity: 1;
+}
+h2 {
+	text-align: center;
+	font-size: 30px;
+	color:white;
+	
+}
+
+.text {
+	opacity: 1;
+}
+body {
+	
+	 background-image: url("poze/fundal1.jpg");
+	 background-size: 100%;
+	 opacity: 1;
+}
+.pl {
+	width: 89%;
+	margin-top: 0 auto;
+     color:white;
+
+}
+
+
+/*bara meniu*/
+footer {
+	background-color: #5f1818;
+	margin-bottom: 30px;
+  	position: fixed;
+  	left: 0;
+  	bottom: 0;
+  	width: 100%;
+}
+.footer {
+	color:white ;
+	font-size: 20px;
+	text-decoration: none;
+}
+/*raza actiune*/
+ a {
+	color: #CCC;
+	text-decoration: none;
+	padding-top: 10px;
+	padding-right: 100px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+}
+a:hover {
+	border-radius: 10px;
+	background-color:#f84e4e;
+}
+ a:hover {
+	text-decoration: underline;
+}
+nav ul li a {
+   font-family: Georgia, "Times New Roman", Times, serif;
+}
+/*spatiu butoane(raza de actiune)*/
+nav ul li {
+	display: inline-block;
+	margin-left: 10px;
+}
+.divp{
+	display: inline;
+	width:100%;
+	height:auto;
+}
+
+
+
+.container1{
+	position: relative;
+	width: 320px;
+	margin: 100px auto 0 auto;
+	perspective: 1000px;
+  }
+ 
+  .carousel1 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d; 
+	animation: rotate360 60s infinite forwards linear;
+  }
+  .carousel1__face1 { 
+	position: absolute;
+	width: 300px;
+	height: 187px;
+	top: 20px;
+	left: 10px;
+	right: 10px;
+	background-size: cover;
+	box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
+	display: flex;
+  }
+  .carousel1__face1:nth-child(1) {
+	background-image: url("poze/a.jpg");
+	transform: rotateY(  0deg) translateZ(430px); }
+  .carousel1__face1:nth-child(2) { 
+	background-image: url("poze/aa.jpg");
+	  transform: rotateY( 40deg) translateZ(430px); }
+  .carousel1__face1:nth-child(3) {
+	background-image: url("poze/b.jpg");
+	transform: rotateY( 80deg) translateZ(430px); }
+  .carousel1__face1:nth-child(4) {
+	background-image: url("poze/c.jpg");
+	transform: rotateY(120deg) translateZ(430px); }
+  .carousel1__face1:nth-child(5) { 
+	background-image: url("poze/d.jpg");
+   transform: rotateY(160deg) translateZ(430px); }
+  .carousel1__face1:nth-child(6) { 
+	background-image: url("poze/e.jpg");
+   transform: rotateY(200deg) translateZ(430px); }
+  .carousel1__face1:nth-child(7) { 
+	background-image: url("poze/f.jpg");
+   transform: rotateY(240deg) translateZ(430px); }
+  .carousel1__face1:nth-child(8) {
+	background-image: url("poze/h.jpg");
+	transform: rotateY(280deg) translateZ(430px); }
+  .carousel1__face1:nth-child(9) {
+	background-image: url("poze/g.jpg");
+	transform: rotateY(320deg) translateZ(430px); }
+  
+  @keyframes rotate360 {
+	from {
+	  transform: rotateY(0deg);
+	}
+	to {
+	  transform: rotateY(-360deg);
+	}
+  }

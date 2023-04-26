@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="UTF-8">
+<title>MODERNE</title>
+ <link rel="stylesheet" href="moderne.css">
+ 
+	 <style>
+    #container {
+      display: flex;
+      justify-content: space-between;
+      width: 98%;
+      height: auto;
+      margin-bottom: 0px;
+       margin-top:3%;
+	   margin-left:0;
+    }
+    .image {
+      display: inline-block;
+      width: 30%;
+      height: auto;
+      cursor: pointer;
+	   margin-left:2%;
+	    margin-bottom:5%;
+    }
+    .active {
+	border-radius: 20px;
+      border: 4px solid blue;
+	   
+      height:auto;
+	  margin-bottom:0;
+    }
+    .text {
+      display: none;
+      padding: 0;
+      margin-top:0px;
+     width:98%;
+	   margin-left:30%;
+	     margin-bottom:10%;
+	 
+
+	 border-radius: 20px;
+    }
+    .active-text {
+      display: block;
+ border-top-left-radius:30px;
+  border-bottom-right-radius: 30px;
+  border: 2px solid blue;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius:30px;
+	    margin-left:2%;
+		 margin-right:4%;
+		
+    }
+  </style>
+</head>
+<body>
+<p class="inceput"> Cele 7 minuni ale lumii moderne</p>
+  <div id="container">
+    <div class="image" onclick="showText(0)">
+      <img src="poze/m1.jpg" alt="Imaginea 1">
+    </div>
+    <div class="image" onclick="showText(1)">
+      <img src="poze/m2.jpg" alt="Imaginea 2">
+    </div>
+    <div class="image" onclick="showText(2)">
+      <img src="poze/m3.jpg" alt="Imaginea 3">
+    </div>
+    <div class="image" onclick="showText(3)">
+      <img src="poze/m4.jpg" alt="Imaginea 4">
+    </div>
+	
+	
+	 <div class="image" onclick="showText(4)">
+      <img src="poze/m5.jpg" alt="Imaginea 5">
+    </div>
+	
+	<div class="image" onclick="showText(5)">
+      <img src="poze/m6.jpg" alt="Imaginea 6">
+    </div>
+	
+	<div class="image" onclick="showText(6)">
+      <img src="poze/m7.jpg" alt="Imaginea 7">
+    </div>
+  </div>
+
+  <div id="text-container">
+    <div id="text1" class="text"></div>
+    <div id="text2" class="text"></div>
+    <div id="text3" class="text"></div>
+    <div id="text4" class="text"></div>
+	 <div id="text5" class="text"></div>
+	 <div id="text6" class="text"></div>
+	 <div id="text7" class="text"></div>
+  </div>
+
+  <script>
+    var images = document.querySelectorAll('.image');
+    var texts = document.querySelectorAll('.text');
+
+    function showText(index) {
+      for (var i = 0; i < images.length; i++) {
+        images[i].classList.remove('active');
+        texts[i].classList.remove('active-text');
+      }
+      var image = images[index];
+      var text = texts[index];
+      image.classList.add('active');
+      switch(index) {
+        case 0:
+          text.innerHTML = "<p class='text_m'> Marele zid al Chinei</p>   <p class='par'>Marele Zid al Chinei este o structură masivă de apărare care se întinde pe mai mult de 13.000 de mile (21.000 de kilometri) în nordul Chinei. A fost construit inițial în timpul dinastiei Qin (221-206 î.Hr.) și a fost ulterior extins și renovat de către dinastiile Han, Ming și Qing.</p>  <p class='par'>Marele Zid este format dintr-o serie de turnuri de pază, bastioane și baraje, care sunt interconectate prin ziduri mari. Aceste caracteristici arhitecturale au fost concepute pentru a ajuta la apărarea împotriva invadatorilor și pentru a permite soldaților să comunice rapid și eficient între ele.</p>      <p class='par'>În ciuda eforturilor de construcție mari, Marele Zid nu a putut să prevină invazia mongolă din secolul al XIII-lea. Cu toate acestea, zidul a continuat să joace un rol important în istoria chineză, atât ca o structură defensivă, cât și ca o emblemă a măreției și a perseverenței chineze.</p> <p class='par'>Astăzi, Marele Zid al Chinei este una dintre cele mai populare atracții turistice din lume</p> ";
+          break;
+        case 1:
+          text.innerHTML = " <p class='text_m'>   Petra - Iordania </p> <p class='par'>Petra este un oraș antic în Iordania, cunoscut pentru arhitectura sa sculptată în stâncă și pentru faptul că a fost capitala nabateană în antichitate.</p> <p class='par'>Acesta a fost un important centru comercial și cultural în secolul al VI-lea î.Hr. și este acum o destinație populară de turism, fiind inclus în lista Patrimoniului Mondial UNESCO.</p> <p class='par'>Principalele atracții turistice din Petra includ clădirea faimoasă Al Khazneh (The Treasury), teatrul antic și Mănăstirea Ad-Deir, situată pe un vârf de munte.</p>";
+          break;
+        case 2:
+          text.innerHTML = "<p class='text_m'> Statuia lui Hristos Mântuitorul - Rio de Janeiro, Brazilia</p> <p class='par'>Statuia lui Hristos Mântuitorul este o faimoasă statuie a lui Isus Hristos situată pe vârful muntelui Corcovado din Rio de Janeiro, Brazilia.</p> <p class='par'>Statuia are o înălțime de 30 de metri și a fost finalizată în anul 1931. Aceasta este realizată din beton armat și acoperită cu plăci de piatră săpată și lipită de muncitori.</p> <p class='par'>Statuia este o importantă atracție turistică și un simbol al creștinismului în Brazilia. De la baza statuii, vizitatorii pot avea o panoramă impresionantă a orașului Rio de Janeiro și a Golfului Guanabara.</p> <p class='par'>Statuia lui Hristos Mântuitorul a fost inclusă în lista celor 7 noi minuni ale lumii moderne, fiind una dintre cele mai mari și mai impresionante statui din lume.</p> ";
+          break;
+        case 3:
+          text.innerHTML = "<p class='text_m'>  Machu Picchu - Peru </p><p class='par'>Machu Picchu este un sit arheologic important situat în Peru, la aproximativ 80 de kilometri nord-vest de Cusco. A fost construit în secolul al XV-lea și reprezintă una dintre cele mai cunoscute atracții turistice din lume.</p><p class='par'>Machu Picchu este situat la o altitudine de aproximativ 2.430 de metri deasupra nivelului mării și este amplasat pe o creastă stâncoasă între văile râurilor Urubamba și Huayna Picchu. Este construit din piatră și a fost folosit ca sanctuar religios și palat al împăratului incaș.</p><p class='par'>Deși a fost construit înainte de cucerirea spaniolă a Americii de Sud, Machu Picchu a fost abandonat relativ curând după aceea și a rămas necunoscut pentru lumea exterioară până la descoperirea sa în 1911 de către exploratorul american Hiram Bingham.</p><p class='par'>Din 1983, Machu Picchu este inclus în lista Patrimoniului Mondial UNESCO și este considerat una dintre cele mai importante situri arheologice din lume. De asemenea, a fost numit una dintre cele șapte noi minuni ale lumii într-un concurs internațional desfășurat în 2007.</p>";                                                 
+          break;
+		   case 4:
+          text.innerHTML = "<p class='text_m'>  Colosseumul - Roma, Italia </p> <p class='par'>Colosseumul este un amfiteatru gigantic din centrul Romei, Italia. Construit între anii 70 și 80 d.Hr., acesta este considerat unul dintre cele mai mari și mai bine conservate monumente ale antichității romane.</p> <p class='par'>Acesta a fost construit pentru a găzdui spectacole publice, cum ar fi jocuri, lupte cu animale sălbatice și gladiatori. Cu o capacitate de până la 80.000 de spectatori, Colosseumul a devenit un simbol al puterii și prestigiului Romei antice.</p> <p class='par'>Colosseumul a fost folosit până la sfârșitul secolului al VI-lea, iar în prezent rămășițele sale impresionante continuă să atragă turiști din întreaga lume. Acesta este considerat unul dintre cele mai importante obiective turistice din Italia.</p>   <p class='par'>În 1980, Colosseumul a fost inclus în lista patrimoniului mondial UNESCO, fiind recunoscut ca unul dintre cele mai importante și impresionante monumente ale lumii antice.</p> <p class='par'>Astăzi, Colosseumul este o destinație turistică populară, cu mii de vizitatori care îl vizitează în fiecare an pentru a admira arhitectura sa impresionantă și pentru a afla mai multe despre istoria sa fascinantă.</p> ";
+          break;
+		  
+		  case 5:
+          text.innerHTML = "<p class='text_m'> Taj Mahal - Agra, India  </p>   <p class='par'>Taj Mahal este un mausoleu din Agra, India, construit între 1631 și 1653 de împăratul musulman Shah Jahan în memoria soției sale favorite, Mumtaz Mahal. Acesta este considerat una dintre cele mai faimoase clădiri din lume și a fost inclus în Patrimoniul Mondial UNESCO în 1983.</p> <p class='par'>Taj Mahal este construit în stilul arhitectonic mogul, o combinație de elemente arhitecturale din Persia, India și Islam. Clădirea principală este construită din marmură albă pură și este decorată cu dungi subțiri de jad, turcoaz și alte pietre prețioase.</p><p class='par'>Mausoleul este flancat de două clădiri de dimensiuni similare, cunoscute sub numele de moschei și Mehmankhana, care sunt construite din nisip roșu și marmură albă. Un grădina frumos amenajată înconjoară clădirile și include numeroase fântâni și canale de apă.</p><p class='par'>Taj Mahal este deschis pentru vizitatori și este vizitat de milioane de turiști din întreaga lume în fiecare an. Cu toate acestea, din cauza daunelor cauzate de poluare și turism, autoritățile indiene au luat măsuri pentru a proteja această clădire istorică, inclusiv limitarea numărului de vizitatori zilnic.</p><p class='par'>Vizitarea Taj Mahal este o experiență memorabilă și impresionantă, oferind o priveliște uluitoare asupra acestei capodopere arhitecturale și a istoriei și culturii bogate din India.</p>";
+          break;
+		  
+		  case 6:
+          text.innerHTML = "<p class='text_m'> Chichen Itza - Peninsula Yucatan, Mexic  </p><p class='par'>Chichen Itza este un sit arheologic din Peninsula Yucatan, Mexic. Acesta a fost construit de cultura maya, care a domnit în această zonă în perioada pre-columbiană.</p><p class='par'>Cel mai faimos punct de atracție din Chichen Itza este Piramida lui Kukulcan, cunoscută și sub numele de 'El Castillo'. Această piramidă a fost construită în jurul anului 800 d.Hr. și este un exemplu remarcabil de arhitectură mesoamericană.</p><p class='par'>Alte puncte de interes din Chichen Itza includ Jocul de Bila Mesoamerican, Templele Jaguar și Toltec, Observatorul, Cenotele Sacbe și Tzompantli.</p><p class='par'>Chichen Itza a fost declarat sit al patrimoniului mondial UNESCO în 1988 și este una dintre cele mai populare destinații turistice din Mexic.</p><p class='par'>Vizitatorii pot explora aceste clădiri antice și pot învăța despre cultura maya și istoria Mesoamericii în cadrul muzeelor și tururilor ghidate disponibile în sit.</p> ";
+          break;
+        default:
+          text.innerHTML = "";
+      }
+      text.classList.add('active-text');
+    }
+  </script>
+
+
+<footer>
+	<nav>
+		<ul>	
+			<li><a class="footer" href="index.html">ACASA</a></li>
+			
+	 		
+	 		<li><a class="footer" href="antice.html">ANTICE</a></li>
+	 		<li><a class="footer" href="moderne.html">MODERNE</a></li>
+	 		<li><a class="footer" href="contact.html">CONTACT</a></li>
+		</ul>
+	</nav>
+	</footer>
+ </body>
+</html>
